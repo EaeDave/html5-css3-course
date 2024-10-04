@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu HTML</title>
+    <title>Document</title>
+    <style>
+        .span {
+            font-size: 24px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <!-- O HTML é considerado semântico porque usa tags que descrevem o 
-    significado do conteúdo, como <header>, <article>, e <footer>. 
-    Isso ajuda navegadores e mecanismos de busca a entenderem a estrutura 
-    e a importância do conteúdo, melhorando a acessibilidade e a otimização para SEO. -->
-    <h1>Meu título principal</h1>  <!-- Cabeçalho mais importante-->
-    <p>Lorem ipsum dolor sit amet.</p>
-
-    <h2>Subtítulo</h2>
-    <p>Lorem ipsum dolor sit amet.</p>
-
-    <h3>Característica 1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, impedit.</p>
-    
-    <h3>Característica 2</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, impedit.</p>
-    <h4>Meu título</h4>
-    <h5>Meu título</h5>
-    <h6>Meu título</h6>  <!-- Cabeçalho menos importante-->
-</body>
+    <h1 style="background: red;">Cabeçalho</h1>
+    <h1>Cabeçalho</h1>
+    <!-- A tag <b> deixa um texto em negrito, sem semântica de importância, enquanto
+    a tag <strong> além de deixar em negrito, tem seu grau de importância elevado
+    fazendo com quem buscadores visualizem como algo relevante, e frase de ênfase para
+    acessibilidade (leitores de tela). -->
+    <p><b>Lorem</b> <strong>ipsum</strong>, <i>dolor</i> <em>sit</em> amet consectetur adipisicing elit. Corporis, officiis?</p>
+    <!-- A tag <i> deixa em itálico, e a tag <em> (Emphasis) deixa em ítalico e é semântico. -->
+    <a href="https://www.google.com" target="_blank">Link para o Google</a>
+    <br>
+    <a href="https://www.google.com" target="_blank">
+    <img src="https://gallerypng.com/wp-content/uploads/2024/07/scary-troll-face-png-image-free-download-750x750.png" alt="Scary Troll Face" width="50" height="">
+    </a>
+    <p>O céu é <del>vermelho</del> <ins>azul</ins></p>
+    <p>A tag "del" <del>é semântica</del> e a tag "ins" <ins>também</ins></p>
+    <p>Enquanto a tag "s"<s>não é semântica</s> e nem a <u>tag</u> "u" </p>
+    <p>Esse texto começa relativamente grande e depois fica <small>small</small></p>
+    <p>2<sup>2</sup> = 4</p>
+    <p>h<sub>2</sub>O</p>
+    <hr>
+    <p><q cite="https://www.meusite.com">Isso é uma citação</q></p>
+    <blockquote>Citação</blockquote>
+    <p>Isso é um comando Python: <br>
+        <code>print("hello world")</code>
+    </p>
+    <pre>
+        <code>
+Isso é um código formatado:
+lista = [0, 1, 2, 3, 4]
+for elemento in lista:
+    print(elemento)
+        </code>
+    </pre>
+    <p>A tag <span class="span">span é in-line</span></p>  <!-- Container genérico in-line-->
+    <div>Isso é um container do tipo block <div>Teste</div></div>
+    </body>
 </html>
