@@ -4,38 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu HTML</title>
-
-    <style>
-        h1 {  /* Selecionando a tag diretamente pelo CSS*/
-            background: yellow;
-        }
-        p {
-            background: blue;
-        }
-
-        #cabecalho-dois {  /* Selecionando um id pelo CSS */
-            background: purple;
-        }
-
-        .fundo-verde {  /* Selecionando uma class pelo CSS*/
-            background: green;
-        }
-
-        .bold {
-            color: brown;
-        }
-    </style>
 </head>
 <body>
-    <h1 id="cabecalho-um">Cabecalho um com id</h1>  <!-- O atributo id é um identificador único-->
-    <h1 id="cabecalho-dois">Cabecalho dois com id</h1>  <!-- O atributo id é um identificador único-->
-    <h1 id="cabecalho-tres" class="fundo-verde borda-esquerda">
-        Cabecalho três com class e id <!-- Diferente do id, class pode se repetir-->
-    </h1>
-    <h1 id="cabecalho-quatro" class="fundo-verde">
-        Cabecalho quatro com class e id <!-- Diferente do id, class pode se repetir-->
-    </h1>
-    <p>Um texto <b class="bold">qualquer</b></p>
-    <h1 class="bold">MEU TEXTO É MARROM POR CAUSA DA CLASSE</h1>
+    <!-- O HTML é considerado semântico porque usa tags que descrevem o 
+    significado do conteúdo, como <header>, <article>, e <footer>. 
+    Isso ajuda navegadores e mecanismos de busca a entenderem a estrutura 
+    e a importância do conteúdo, melhorando a acessibilidade e a otimização para SEO. -->
+    <h1>Meu título principal</h1>  <!-- Cabeçalho mais importante-->
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h3>Característica 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, impedit.</p>
+    
+    <h3>Característica 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, impedit.</p>
+    <h4>Meu título</h4>
+    <h5>Meu título</h5>
+    <h6>Meu título</h6>  <!-- Cabeçalho menos importante-->
 </body>
 </html>
