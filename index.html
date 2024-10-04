@@ -2,18 +2,40 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <!-- Suporte a dispositivos móveis-->
-    <!-- Essa tag informa para o navegador para a página ter a mesma escala do dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu HTML</title>
+
+    <style>
+        h1 {  /* Selecionando a tag diretamente pelo CSS*/
+            background: yellow;
+        }
+        p {
+            background: blue;
+        }
+
+        #cabecalho-dois {  /* Selecionando um id pelo CSS */
+            background: purple;
+        }
+
+        .fundo-verde {  /* Selecionando uma class pelo CSS*/
+            background: green;
+        }
+
+        .bold {
+            color: brown;
+        }
+    </style>
 </head>
 <body>
-    <h1>Meu HTML</h1>  <!-- Heading 1 (Cabeçalho 1)-->
-    <p>  <!-- Paragraph (Parágrafo)-->
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Cum laudantium repellat dignissimos eum magni maxime culpa, 
-        explicabo id, voluptatem necessitatibus perferendis vero aperiam 
-        doloremque tenetur placeat, possimus illo ut eveniet.
-    </p>
+    <h1 id="cabecalho-um">Cabecalho um com id</h1>  <!-- O atributo id é um identificador único-->
+    <h1 id="cabecalho-dois">Cabecalho dois com id</h1>  <!-- O atributo id é um identificador único-->
+    <h1 id="cabecalho-tres" class="fundo-verde borda-esquerda">
+        Cabecalho três com class e id <!-- Diferente do id, class pode se repetir-->
+    </h1>
+    <h1 id="cabecalho-quatro" class="fundo-verde">
+        Cabecalho quatro com class e id <!-- Diferente do id, class pode se repetir-->
+    </h1>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <h1 class="bold">MEU TEXTO É MARROM POR CAUSA DA CLASSE</h1>
 </body>
 </html>
