@@ -4,59 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        body {
+            background-image: url(https://occ-0-2989-420.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXapHorjwqFM-8x-wjU84SpqNd6Rxt6q3pzT_Wt7VnzkZkRiOii7Tz82boAu2fGwX5hhMcg6WP7BFXyBe4XLQ7TD8rzDkXJ0uLWn.webp?r=988);
+            background-size: cover;
+            background-position: top;
+        }
+
+        #heading {
+            /* margin-top: 20px; */
+            padding-top: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        #heading h1 {
+            display: flex;
+            font-size: 40px;
+            
+            margin: 0;
+            color: white ;
+        }
+
+        #heading .direita {
+            margin-right: 15px;
+            color: white;
+        }
+
+        #heading div {
+            justify-content: space-between;
+            text-transform: uppercase;
+            display: flex;
+        }
+
+    </style>
 </head>
-<body>  <!-- Antes do HTML5, a estrutura da web era separada com divs e navs-->
-    <div id="header">
-        <div id="menu"></div>
-    </div>
-    <div id="content"></div>
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="esquerda">Netflix</h1>
+            <h2 class="direita">Login</h2>
+        </div>
+        
+    </header>
 
-    <!-- Com a implementação do HTML5, acrescentou tags próprias para a separação-->
-     <header>
-        <h1>
-            <a href="#">Home</a>
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Quae odit velit similique rem nostrum suscipit facere minima
-        vero eaque omnis, rerum eligendi non quas fuga aliquid labore, 
-        aspernatur quisquam eos.</p>
-        <div>Alinhar algo.</div>
-     </header>
 
-     <!-- A tag <aside> é usada para representar conteúdo que é tangencialmente 
-        relacionado ao conteúdo principal da página. Geralmente, é usada para notas, comentários 
-        ou informações adicionais que não são essenciais, mas podem ser relevantes para o leitor.-->
-    <aside>
-        <nav>
-            <h3>Sites relacionados</h3>  
-            <ul>
-                <li><a href="https://www.google.com" target="_blank">https://www.google.com</a></li>
-            </ul>
-        </nav>
-    </aside>
 
-     <section>
-        <header>
-            <h2>Roupas Femininas</h2>
-        </header>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Isso é parte do <q>article</q></p>
-        </article>
-     </section>
+    <!-- <div style="width: 180px; height: 120px; background: blueviolet; float: left;">
 
-     <section>
-        <header>
-            <h2>Roupas Masculinas</h2>
-        </header>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Isso é parte do <q>article</q></p>
-        </article>
-     </section>
+        <div style="width: 60px; height: 60px; background: red; float: left;"></div>
 
-     <footer>
-        Rodapé
-     </footer>
-    </body>
+        <div style="width: 60px; height: 60px; background: yellow; float: left;"></div>
+
+        <div style="width: 60px; height: 60px; background: blue; float: left;"></div>
+        
+        <div style="width: 60px; height: 60px; background: turquoise; float: left;"></div>
+        
+        <div style="width: 120px; height: 60px; background: gray; float: left; text-align: center;">
+            <p>Qualquer coisa</p>
+        </div>
+
+    </div> -->
+</body>
 </html>
