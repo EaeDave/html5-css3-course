@@ -3,19 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conheça todas as tags HTML</title>
+    <title>Document</title>
 </head>
-<body>
-    <nav>  <!-- Container responsável por agrupar links de navegação-->
-        <ul>  <!-- Unordered list (lista não ordenada)-->
-            <li>  <!-- Elemento da lista -->
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element">MDN - Elementos HTML</a>
-            </li>
-        </ul>
-        <ol>  <!-- Orderes list (lista ordenada)-->
-            <li>test</li>  <!-- Elemento da lista-->
-            <li>test2</li>
-        </ol>
-    </nav>
-</body>
+<body>  <!-- Antes do HTML5, a estrutura da web era separada com divs e navs-->
+    <div id="header">
+        <div id="menu"></div>
+    </div>
+    <div id="content"></div>
+
+    <!-- Com a implementação do HTML5, acrescentou tags próprias para a separação-->
+     <header>
+        <h1>
+            <a href="#">Home</a>
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quae odit velit similique rem nostrum suscipit facere minima
+        vero eaque omnis, rerum eligendi non quas fuga aliquid labore, 
+        aspernatur quisquam eos.</p>
+        <div>Alinhar algo.</div>
+     </header>
+
+     <!-- A tag <aside> é usada para representar conteúdo que é tangencialmente 
+        relacionado ao conteúdo principal da página. Geralmente, é usada para notas, comentários 
+        ou informações adicionais que não são essenciais, mas podem ser relevantes para o leitor.-->
+    <aside>
+        <nav>
+            <h3>Sites relacionados</h3>  
+            <ul>
+                <li><a href="https://www.google.com" target="_blank">https://www.google.com</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+     <section>
+        <header>
+            <h2>Roupas Femininas</h2>
+        </header>
+        <article>
+            <h3>Heading 3</h3>
+            <p>Isso é parte do <q>article</q></p>
+        </article>
+     </section>
+
+     <section>
+        <header>
+            <h2>Roupas Masculinas</h2>
+        </header>
+        <article>
+            <h3>Heading 3</h3>
+            <p>Isso é parte do <q>article</q></p>
+        </article>
+     </section>
+
+     <footer>
+        Rodapé
+     </footer>
+    </body>
 </html>
