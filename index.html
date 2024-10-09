@@ -4,59 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .section-one {
+            /* Box-Model */
+            margin: 30px 0 0 10px;  /* margin indica a distância do elemento para outro */
+            width: 280px; /* content edge */
+            height: 200px; /* content edge */
+            /* border: 5px solid black;   border indica a distância do content edge, até o mesmo, incluindo o padding*/
+            padding: 150px 0px 150px 15px;  /* padding indica a distância do content edge até o border edge */
+            border-style: solid;
+            border-width: 12px;
+            border-top-color: firebrick;
+            border-right-color: blueviolet;
+            border-bottom-color: cyan;
+            border-left-color: yellow;
+            /* border-color: red blue yellow green; */
+
+
+            background-color: deeppink;
+            background-image: url(https://media.licdn.com/dms/image/D4E12AQG0hyhZmq0AyQ/article-cover_image-shrink_600_2000/0/1700488940348?e=2147483647&v=beta&t=eZtDe_xSbm65L-mR1tnM8vnfMpM3aWcSe8rw8o7sjSs) ;
+            background-size: cover;
+            background-position: center center;
+            color: whitesmoke;
+        }
+
+        .section-two {
+            background: cyan;
+            margin-top: 20px;
+            width: 200px;
+            height: 50px; /* content edge */
+            border: 5px solid black;  /* border indica a distância do content edge, até o mesmo, incluindo o padding*/
+            padding: 150px;
+            text-align: center;
+        }
+    </style>
 </head>
-<body>  <!-- Antes do HTML5, a estrutura da web era separada com divs e navs-->
-    <div id="header">
-        <div id="menu"></div>
-    </div>
-    <div id="content"></div>
+<body>
+    <header>
+        <section>
+            <h1>CSS Box-Model</h1>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model">MDN-Docs</a>
+        </section>
 
-    <!-- Com a implementação do HTML5, acrescentou tags próprias para a separação-->
-     <header>
-        <h1>
-            <a href="#">Home</a>
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Quae odit velit similique rem nostrum suscipit facere minima
-        vero eaque omnis, rerum eligendi non quas fuga aliquid labore, 
-        aspernatur quisquam eos.</p>
-        <div>Alinhar algo.</div>
-     </header>
-
-     <!-- A tag <aside> é usada para representar conteúdo que é tangencialmente 
-        relacionado ao conteúdo principal da página. Geralmente, é usada para notas, comentários 
-        ou informações adicionais que não são essenciais, mas podem ser relevantes para o leitor.-->
-    <aside>
-        <nav>
-            <h3>Sites relacionados</h3>  
-            <ul>
-                <li><a href="https://www.google.com" target="_blank">https://www.google.com</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-     <section>
-        <header>
-            <h2>Roupas Femininas</h2>
-        </header>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Isso é parte do <q>article</q></p>
-        </article>
-     </section>
-
-     <section>
-        <header>
-            <h2>Roupas Masculinas</h2>
-        </header>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Isso é parte do <q>article</q></p>
-        </article>
-     </section>
-
-     <footer>
-        Rodapé
-     </footer>
-    </body>
+        <section class="section-one">Lorem ipsum dolor sit amet.</section>
+        <section class="section-two">2</section>
+    </header>
+</body>
 </html>
