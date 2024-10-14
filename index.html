@@ -4,17 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <section>
         <form action="#" method="get" target="_blank" autocomplete="off">
-            <h1>Cabeça</h1>
+            <h1>Formulários</h1>
             <p>O formulário</p>
-            
+
             <fieldset>
-                <legend>Descrição</legend>
+                <legend>Formulário completo</legend>
                 <p>
-                    <input type="text" name="" id="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                    
+                </p>
+
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Enviar</button>
+                </p>
+
+                <p>
+                    <label for="dev1">Sou dev 1</label>
+                    <input type="checkbox" name="dev" id="dev1" value="dev1" checked>
+                    <label for="dev2">Sou dev 2</label>
+                    <input type="checkbox" name="dev" id="dev2" value="dev2">
+                    
+                </p>
+
+                <p>
+                    Gênero:<br>
+                    <label for="male">Masculino</label>
+                    <input type="radio" name="genero" id="male" value="masculino" checked><br>
+                    <label for="female">Feminino</label>
+                    <input type="radio" name="genero" id="female" value="feminino">
+                    
+                </p>
+
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Enviar</button>
                 </p>
             </fieldset>
         </form>
