@@ -4,100 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
-        li {
-            margin-left: 50px;
+        table {
+            width: 800px;
+            border-collapse: collapse;
         }
-
-        nav {
-            text-transform: uppercase;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.8);
-            height: 50px;
-
-
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        nav li {
-            margin: 20px;
-        }
-
-        .menu {
-            cursor: pointer;
+        
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
         }
 
-        .menu:hover {
-            background-color: black;
+        table caption {
+            caption-side: top;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
         }
 
-        nav a:hover {
-            background-color: rgba(0, 0, 0, 0.5);
+        tfoot td {
+            background: #ddd;
+            font-style: italic;
         }
+
+        thead {
+            background-color: #ddd;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
     </style>
 </head>
 <body>
-    <section>
-        <h1 class="menu">Menu</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-            </ul>
-        </nav>
-    </section>
+    <p>Lorem ipsum dolor sit amet.</p>
 
-    <section class="listas">
-        <h1 style="font-size: 32px;">Listas</h1>
+    <div class="responsive-table">
+        <table>
+            <caption>Descrição para tabela</caption>
+            <thead>  <!-- Table Head -->
+                <tr>  <!-- Table Row -->
+                    <th>  <!-- Table Head--> Header 1</th>
+                    <th>  <!-- Table Head--> Header 2</th>
+                    <th>  <!-- Table Head--> Header 3</th>
+                </tr>
+            </thead>
 
-        <section class="listas-ordenadas">
-            <h2 style="cursor: pointer; display: inline;" onmouseover="alert('Oi')">Listas ordenadas</h2>
-            <ol type="1" start="20">
-                <li>Café</li>
-                <li>Leite</li>
-                <li>Pão</li>
-            </ol>
-        </section>
+            <tbody>
+                <tr>
+                    <td>Body 1</td>
+                    <td>Body 2</td>
+                    <td>Body 3</td>
+                </tr>
 
-        <section class="listas-nao-ordenadas">
-            <h2>Listas não ordenadas</h2>
-            <ul>
-                <li>C++</li>
-                <li>C#</li>
-                <li>C</li>
-            </ul>
+                <tr>
+                    <td colspan="3">Body 4</td>
+                </tr>
 
-            <section class="listas-descritivas">
-                <h2>Listas descritivas</h2>
-                <dl>
-                    <dt>Python</dt>
-                    <dd>É uma linguagem de programação multiparadigma com tipagem forte e dinâmica</dd>
-                </dl>
-            </section>
+                <tr>
+                    <td>Body 5</td>
+                    <td>Body 6</td>
+                    <td>Body 7</td>
+                </tr>
+            </tbody>
 
-        </section>
-    </section>
+            <tfoot>
+                <tr>
+                    <td>Footer</td>
+                    <td>Footer</td>
+                    <td>Footer</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="1" rowspan="2">Footer</td>
+                </tr>
+            
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
