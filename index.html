@@ -4,91 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        table {
-            width: 800px;
-            border-collapse: collapse;
-        }
-        
-        table td, table th {
-            border: 1px solid #ccc;
-            padding: 5px;
-            text-align: center;
-        }
-
-        table caption {
-            caption-side: top;
-            text-align: center;
-            font-style: italic;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-
-        tfoot td {
-            background: #ddd;
-            font-style: italic;
-        }
-
-        thead {
-            background-color: #ddd;
-        }
-
-        .responsive-table {
-            max-width: 100%;
-            overflow-x: auto;
-        }
-
-    </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet.</p>
-
-    <div class="responsive-table">
-        <table>
-            <caption>Descrição para tabela</caption>
-            <thead>  <!-- Table Head -->
-                <tr>  <!-- Table Row -->
-                    <th>  <!-- Table Head--> Header 1</th>
-                    <th>  <!-- Table Head--> Header 2</th>
-                    <th>  <!-- Table Head--> Header 3</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Body 1</td>
-                    <td>Body 2</td>
-                    <td>Body 3</td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">Body 4</td>
-                </tr>
-
-                <tr>
-                    <td>Body 5</td>
-                    <td>Body 6</td>
-                    <td>Body 7</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td>Footer</td>
-                    <td>Footer</td>
-                    <td>Footer</td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                    <td colspan="1" rowspan="2">Footer</td>
-                </tr>
+    <section>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+            <h1>Cabeça</h1>
+            <p>O formulário</p>
             
-            </tfoot>
-        </table>
-    </div>
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <input type="text" name="" id="">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    
 </body>
 </html>
