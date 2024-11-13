@@ -3,56 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        label {
-            cursor: pointer;
-        }
-    </style>
+    <title>Formulários</title>
 </head>
 <body>
-    <section>
-        <form action="#" method="get" target="_blank" autocomplete="off">
-            <h1>Formulários</h1>
-            <p>O formulário</p>
+    <form action="#">
+        <fieldset>
+            <legend>Formulários</legend>
+            <p>
+                <label style="display: block;" for="date">Date:</label>
+                <input type="date" name="date" id="date" value="2001-11-28">
+            </p>
 
-            <fieldset>
-                <legend>Formulário completo</legend>
-                <p>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
-                    
-                </p>
+            <p>
+                <label style="display: block;" for="datetime">Datetime:</label>
+                <input type="datetime-local" name="datetime" id="datetime" value="2001-11-28T12:00">
+            </p>
 
-                <p>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Enviar</button>
-                </p>
+            <p>
+                <label style="display: block;" for="time">Time:</label>
+                <input type="time" name="time" id="time" value="12:00">
+            </p>
+            
+            <p>
+                <label style="display: block;" for="color">Color:</label>
+                <input type="color" name="color" id="color" value="#FFFFFF">
+            </p>
 
-                <p>
-                    <label for="dev1">Sou dev 1</label>
-                    <input type="checkbox" name="dev" id="dev1" value="dev1" checked>
-                    <label for="dev2">Sou dev 2</label>
-                    <input type="checkbox" name="dev" id="dev2" value="dev2">
-                    
-                </p>
+            <p>
+                <label style="display: block;" for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" placeholder="ex.: email@email.com">
+            </p>
 
-                <p>
-                    Gênero:<br>
-                    <label for="male">Masculino</label>
-                    <input type="radio" name="genero" id="male" value="masculino" checked><br>
-                    <label for="female">Feminino</label>
-                    <input type="radio" name="genero" id="female" value="feminino">
-                    
-                </p>
+            <p>
+                <label style="display: block;" for="file">File:</label>
+                <input type="file" name="file" id="file" accept=".png, .jpg">
+            </p>
 
-                <p>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Enviar</button>
-                </p>
-            </fieldset>
-        </form>
-    </section>
-    
+            <p>
+                <label style="display: block;" for="number">Number:</label>
+                <input type="number" name="number" id="number" placeholder="10">
+            </p>
+
+            <button>Enviar</button>
+        </fieldset>
+    </form>
 </body>
 </html>
