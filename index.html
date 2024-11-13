@@ -44,7 +44,47 @@
                 <input type="number" name="number" id="number" placeholder="10">
             </p>
 
-            <button>Enviar</button>
+            <p>
+                <label style="display: block;" for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </p>
+
+            <p>
+                <label style="display: block;" for="range">Range:</label>
+                <input type="range" name="range" id="range" list="tickmarks">
+
+                <datalist id="tickmarks">
+                    <option value="0" label="0%"></option>
+                </datalist>
+            </p>
+
+            <p>
+                <label style="display: block;" for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="Digite a URL:">
+            </p>
+
+            <p>
+                <label style="display: block;" for="search">Search:</label>
+                <input type="search" name="search" id="search" placeholder="Procurar no site">
+            </p>
+
+            <p>
+                <label style="display: block;" for="select">Select:</label>
+                <select name="select" id="select">
+                    <optgroup label="Agrupamento 1">
+                        <option value="Opção 1" label="Opção 1"></option>
+                        <option value="Opção 2" label="Opção 2"></option>
+                    </optgroup>
+
+                    <optgroup label="Agrupamento 2">
+                        <option value="Opção 1" label="Opção 1"></option>
+                        <option value="Opção 2" label="Opção 2"></option>
+                    </optgroup>
+                    
+                </select>
+            </p>
+
+            <button type="submit">Enviar</button>
         </fieldset>
     </form>
 </body>
